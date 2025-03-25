@@ -1,0 +1,42 @@
+AIM: Georeferencing Topo Sheets and Scanned Maps, Georeferencing Aerial Imagery.
+
+A. Georeferencing Topo Sheets and Scanned Maps:
+1. Start a new project.
+2. Go to Layers → Add Layer → Add Vector Layer.
+3. Select GIS_Workshop\Manual\Prac06\IND_adm0.shp.
+4. Zoom in to Mumbai region in the layer.
+5. Go to Plugins → Manage and Install Plugins.
+6. Ensure that the "Georeferencer GDAL" plugin is installed and enabled.
+7. Go to Raster → Georeferencer.
+8. A new Georeferencer window will open.
+9. File → Open Raster.
+10. Select file “1870_southern-india_3975_3071_600.jpg” from project data folder.
+11. Go to Settings → Transformation Settings.
+12. In the Transformation Settings window, configure parameters.
+13. In the Georeferencer window, go to Edit → Add Points.
+14. Select the set of control points.
+15. Press "RUN" in the transformation settings.
+16. In the Georeferencing window, go to File → Start Georeferencing.
+17. The progress indicator will appear.
+18. The canvas area will now have the scanned map of Mumbai referenced with control points.
+19. Select the newly added layer in the Layer Panel, right-click, and go to Properties.
+20. Set the Transparency level of the raster layer to an appropriate level.
+21. The scanned image map coincides with the existing map.
+
+B. Georeferencing Aerial Imagery:
+1. Install the OpenStreetMap plugin.
+2. Go to Project → Properties → Set CRS to EPSG 3857.
+3. Go to View → Panels → Select OSM Place search.
+4. Search for "Gateway of India, Mumbai" using coordinates 18.92°N 72.83°E.
+5. Zoom in to an appropriate level.
+6. The map will appear.
+7. Go to Raster → Georeferencer.
+8. A new Georeferencer window will open.
+9. File → Open Raster.
+10. Select file “Gateway_Imagery.tif” from project data folder.
+11. Go to Edit → Add Point.
+12. Select control points from the map (indicated in red color).
+13. Go to Setting → Transformation Setting.
+14. Go to File → Start Georeferencing or press the button in the Georeferencing Window.
+15. The progress indicator will appear.
+16. Observe that the aerial image of the Gateway of India is georeferenced on OSM in the map canvas.

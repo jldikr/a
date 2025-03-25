@@ -1,0 +1,31 @@
+AIM: Managing Data Tables and Spatial Data Sets - Table Joins, Spatial Joins, Points in Polygon Analysis, Performing Spatial Queries.
+
+A) Table Joins:
+1. Start a new project.
+2. Add the dataset: “I:\GIS_Workshop\Practicals\Practical_07\A\Data\tl_2013_06_tract.zip”.
+3. Import the CSV file and ensure that numeric fields are interpreted correctly.
+4. Create a sidecar file with a .csvt extension specifying data types.
+5. Save this file in the same directory as the original CSV file.
+6. Go to Layer → Add Layer → Add Delimited Text Layer → Select “ca_tracts_pop.csv”.
+7. In the Layer panel, right-click on “tl_2013_06_tract” layer and select Properties.
+8. In the Properties window, click on "Add Vector Join".
+9. In the "Add Vector Join" window, set the properties and click OK.
+10. After performing the join, adjust symbology to visualize the data properly.
+
+B) Spatial Joins:
+1. Load shapefiles "OEM_NursingHomes_001.shp" and "tl_2013_06_tract.shp".
+2. Go to the attribute table and observe data.
+3. Perform the spatial join: Vector → Data Management Tools → Join Attributes by Location.
+4. View the updated attribute table and inspect results.
+
+C) Points in Polygon Analysis:
+1. Load “EarthQuakeDatabase.txt” and "ne_10m_admin_0_countries.zip".
+2. Use the Select Feature tool to analyze country-wise earthquake distribution.
+3. Check the attribute table; a new column "NumPoints" should indicate the count of earthquakes in each country.
+
+D) Performing Spatial Queries:
+1. Load vector layers: “ne_10m_populated_places_simple.shp” and “ne_10m_rivers_lake_centerlines.shp”.
+2. Go to Vector → Geoprocessing Tool → Buffer.
+3. Create a river buffer using appropriate settings.
+4. Go to Vector → Research Tool → Select By Location.
+5. This will highlight only those rivers that contain a populated place within 2 KM.
