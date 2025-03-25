@@ -1,0 +1,20 @@
+AIM: Creating and Managing Vector Data: Adding vector layers, setting properties, formatting, calculating line lengths and statistics.
+
+Part 1:
+1. Layer → Create Layer → New Shape File Layer → Select Point → Add name → Click add attributed list → OK.
+2. Give your file name and save it.
+3. On the left side, select Toggle Editing → Select Add features → Click anywhere on the screen → Give ID → Click OK.
+4. For Line and Polygon, repeat the steps and select line and polygon in step 1.
+
+Part 2:
+1. Layer → Add Layer → Add Vector Layer.
+2. From Practical 1(D) folder, open “IND_adm0.shp”.
+3. Layer → Add Layer → Add Vector Layer.
+4. From Practical 1(D) folder, open “IND_rails.shp”.
+5. From Layers on the left, right-click on “IND_rails” → Click Open Attribute Table.
+6. Click on Toggle editing mode (editing mode will be on).
+7. Click on Open Field Calculator → Give the output Field name as “Track_len2” and change output field type to Decimal number.
+8. Then write the formula $length/1000 → Click OK.
+9. Vector → Analysis Tools → Basic Statistics.
+10. In the Input vector layer → Select IND_rails.
+11. In the Target field → Select Track_len2 → Run and Close. Values will be displayed.

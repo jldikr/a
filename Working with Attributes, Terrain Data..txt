@@ -1,0 +1,33 @@
+AIM: Working with Attributes, Terrain Data.
+
+Part 1:
+1. Open New Project.
+2. Click on Layer → New Layer → Add Vector Layer.
+3. Browse "Practical 4" dataset and click "Open". Select the zip file "ne_10m_populated_places_simple".
+4. Right-click on that file → Click on "Open Attribute Table".
+5. From above tools → Click on "Select feature using an expression".
+6. Put this formula in textbox: pop_max > 10000 and sov0name = ‘India’.
+7. Click on select and close.
+
+Part 2:
+1. Layer → Add Layer → Add Raster Layer → Select image with extension (mea300.tif) → TIF layer is displayed on screen.
+2. Select Raster → Extraction → Select Clipper.
+3. Check input file whether that is the same filename as you selected prior.
+4. In output file → Select and give any name to your file → Save.
+5. Drag and select the displayed image → Click OK → OK → Close.
+6. On the left side, untick the filename mea300.tif which you selected prior; the clipped layer will be displayed.
+7. Select Raster → Extraction → Select Contour.
+8. Check input file and select the clipped file.
+9. In output file → Select and give any name to your file → Save.
+10. Change interval between contour lines to 100 and check the attribute name as ELEV.
+11. Click OK → OK → Close.
+12. Right-click on the contour file from the Layers section.
+13. Open Attribute Table → Click ELEV and select downward triangle to get the highest value.
+14. Select the first row, then click the "Zoom map to selected row" icon and close that window.
+15. Again repeat step 12.
+16. Right-click on the contour file → Go to Properties → Select Label → Select checkbox "Label this layer" → Select ELEV from dropdown.
+17. Click Apply → OK.
+18. Click Raster → Analysis → Select DEM (Terrain Models).
+19. Give your filename in OUTPUT file using SELECT.
+20. Check that your mode should be Hillshade → Click OK → Close.
+21. You will get your output in some time.
